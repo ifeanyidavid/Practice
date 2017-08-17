@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="minutes"></h1>
+
+    <script>
+
+        var test = "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.";
+
+        // Function to count words
+        function WordCount(str){
+            return str.split(" ").length;
+        }
+
+         // Divide the word count by 200 to get the average number of minute it will take to read text.
+        function timeToRead(word_count){
+            const avg_time_to_read = 200;
+            return duration = word_count / avg_time_to_read;
+        }
+
+        var word_count = WordCount(test);
+
+        document.querySelector('#minutes').innerHTML = timeToRead(word_count);
+    </script>
+</body>
+</html>
